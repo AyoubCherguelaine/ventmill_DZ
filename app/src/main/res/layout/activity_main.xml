@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCF4DD"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:backgroundTint="#BEBEBE"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+
+            >
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="City"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="15dp"
+            />
+
+            <EditText
+                android:id="@+id/edit_text_city"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="7dp"
+                android:textColor="#3C4447"
+                android:background="@drawable/border_edit_txt"
+                android:backgroundTint="@color/white"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:text="Street"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_text_street"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="7dp"
+                android:textColor="#3C4447"
+                android:background="@drawable/border_edit_txt"
+                android:backgroundTint="@color/white"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:text="Place"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:padding="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <Button
+                android:id="@+id/button_place"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="7dp"
+                android:textColor="#3C4447"
+                android:background="@drawable/border_edit_txt"
+                android:backgroundTint="@color/white"
+                app:backgroundTint="@null"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/show_map_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show in the map"
+            android:layout_gravity="center"
+            android:backgroundTint="#3C4447"
+            app:backgroundTint="@null"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:background="@drawable/border"
+            android:layout_marginBottom="15dp"
+            />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:backgroundTint="#73909D"
+            >
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="budabest"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="UnknownId" />
+
+            <TextView
+                android:id="@+id/text_avail1"
+                android:layout_width="138dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/text11"
+                android:background="@drawable/border"
+                android:backgroundTint="#4DFF0F"
+                android:text="available"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/text21"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text11"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Budafok-Tétény"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/text_avail1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="110dp"
+                android:layout_toEndOf="@+id/text21"
+                android:text="1051"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:backgroundTint="#73909D"
+            android:layout_marginTop="7dp"
+            >
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="budabest"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                tools:ignore="UnknownId" />
+
+            <TextView
+                android:id="@+id/text_avail2"
+                android:layout_width="138dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/text12"
+                android:background="@drawable/border"
+                android:backgroundTint="#4DFF0F"
+                android:text="available"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text12"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Budafok-Tétény"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/text_avail2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="110dp"
+                android:layout_toEndOf="@+id/text22"
+                android:text="1051"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:backgroundTint="#73909D"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="137dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="budabest"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="UnknownId" />
+
+                <TextView
+                    android:id="@+id/text_avail3"
+                    android:layout_width="138dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/text13"
+                    android:background="@drawable/border"
+                    android:backgroundTint="#4DFF0F"
+                    android:text="available"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:id="@+id/text23"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text13"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Budafok-Tétény"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/text_avail3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_toEndOf="@+id/text23"
+                    android:text="1051"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:backgroundTint="#73909D"
+                android:layout_marginTop="7dp"
+                >
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="137dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="budabest"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="UnknownId" />
+
+                <TextView
+                    android:id="@+id/text_avail4"
+                    android:layout_width="138dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/text14"
+                    android:background="@drawable/border"
+                    android:backgroundTint="#4DFF0F"
+                    android:text="available"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+
+                <TextView
+                    android:id="@+id/text24"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text14"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Budafok-Tétény"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/text_avail4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="110dp"
+                    android:layout_toEndOf="@+id/text24"
+                    android:text="1051"
+                    android:textColor="@color/black" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

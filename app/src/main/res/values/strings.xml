@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vingt mille</string>
+    <string name="login">Login</string>
+    <string name="login_with_fb">login with facebook</string>
+    <string name="login_with_google">login with google</string>
+    <string name="title_activity_view_map">view_map</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="map_key" translatable="false">AIzaSyB0aJ6oaLeXiHiBnBDyNynunlvPaEXPcjk</string>
+</resources>
