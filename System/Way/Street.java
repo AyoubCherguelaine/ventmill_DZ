@@ -5,11 +5,15 @@ public class Street extends City{
     public String StreetName;
     public String CodePostal;
     public boolean[] places ;
+    public String region;
+    public String latitude, longitude;
 
-    public Street(int place , String StreetName,String codePostal){
+    public Street(int place , String StreetName,String codePostal ,String latitude,String longitude ){
         places = new boolean[place];
 
         this.StreetName = StreetName;
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.CodePostal = codePostal;
     }
 
